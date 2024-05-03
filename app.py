@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 st.title("💬 SMenAI !!! Generative Data Science Chatbot")
 
-f = open("keys/.gemini.txt")
+f = open("keys/gemini.txt")
 key = f.read()
 
 genai.configure(api_key=key)
