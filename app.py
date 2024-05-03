@@ -3,10 +3,13 @@ import google.generativeai as genai
 
 st.title("💬 SMenAI !!! Generative Data Science Chatbot")
 
-f = open("keys/gemini.txt")
-key = f.read()
+# f = open("keys/gemini.txt")
+# key = f.read()
+# genai.configure(api_key=key)
 
-genai.configure(api_key=key)
+
+api_token = st.secrets['api_token_access']
+
 
 # Given a Data Science topic help the user understand it.You also answer any followup question as well.If a question is not related to data science,the response should be, 'That is beyond my knowledge.'
 
